@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'HomeController@show');
+Route::post('/result', 'HomeController@result');
