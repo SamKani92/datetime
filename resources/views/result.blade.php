@@ -10,8 +10,8 @@ Result
 			<div class="col-12">
 				<div class="card">
 					<div class="card-body">
-						<h3 class="card-title">Results</h3>
-						<p>The difference between <b>{{ $date1 }}</b> and <b>{{ $date2 }}</b> is as follows:</p>
+						<h3 class="card-title">Result</h3>
+						<p>The difference between <b>{{ $date1 }} ({{ $date1->timezone }})</b> and <b>{{ $date2 }} ({{ $date2->timezone }})</b> is as follows:</p>
 						<ul>
 							<li>{{ $days }} ({{ $convertResult }})
 							<li>{{ $weekdays }}

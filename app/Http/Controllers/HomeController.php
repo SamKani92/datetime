@@ -27,8 +27,8 @@ class HomeController extends Controller
     public function result(Request $request)
     {
     	// Instantiate Carbon dates from user input
-    	$date1 = Carbon::createFromFormat('Y-m-d H:i:s', $request->datetime1);
-    	$date2 = Carbon::createFromFormat('Y-m-d H:i:s', $request->datetime2);
+    	$date1 = Carbon::createFromFormat('Y-m-d H:i:s', $request->datetime1, $request->datetime1_timezone);
+    	$date2 = Carbon::createFromFormat('Y-m-d H:i:s', $request->datetime2, $request->datetime2_timezone);
 
     	// Get difference in days, weekdays, and weeks
     	$days = $date1->diffInDays($date2);
