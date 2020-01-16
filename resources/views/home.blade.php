@@ -15,11 +15,20 @@ Home
 							@csrf
 							<div class="form-group">
 								<label for="datetime1">First Date</label>
-								<input type="text" class="form-control datetime" id="datetime1" name="datetime1" required>
+								<input type="text" class="form-control datetime" name="datetime1" readonly required>
 							</div>
 							<div class="form-group">
 								<label for="datetime2">Second Date</label>
-								<input type="text" class="form-control datetime" id="datetime2" name="datetime2" required>
+								<input type="text" class="form-control datetime" name="datetime2" readonly required>
+							</div>
+							<div class="form-group">
+								<label for="convert">Also display days in</label>
+								<select class="custom-select" name="convert">
+									<option value="seconds" selected>Seconds</option>
+									<option value="minutes">Minutes</option>
+									<option value="hours">Hours</option>
+									<option value="years">Years</option>
+								</select>
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
